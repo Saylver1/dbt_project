@@ -1,0 +1,1123 @@
+
+
+============================== 2023-04-25 11:58:30.618671 | dfd4d09e-cc04-4579-963a-7c104c55d1a1 ==============================
+[0m11:58:30.618671 [info ] [MainThread]: Running with dbt=1.4.6
+[0m11:58:30.620065 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m11:58:30.620224 [debug] [MainThread]: Tracking: tracking
+[0m11:58:30.623248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878ffb9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8793353fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878ffb92b0>]}
+[0m11:58:30.857494 [debug] [MainThread]: Executing "git --help"
+[0m11:58:30.861480 [debug] [MainThread]: STDOUT: "b"usage : git [--version] [--help] [-C <chemin>] [-c <nom>=<valeur>]\n           [--exec-path[=<chemin>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<chemin>] [--work-tree=<chemin>] [--namespace=<nom>]\n           <commande> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone             Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init              Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add               Ajouter le contenu de fichiers dans l'index\n   mv                D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore           restaurer les fichiers l'arbre de travail\n   rm                Supprimer des fichiers de la copie de travail et de l'index\n   sparse-checkout   Initialiser et modifier l'extraction partielle\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect            Trouver par recherche binaire la modification qui a introduit un bogue\n   diff              Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep              Afficher les lignes correspondant \xc3\xa0 un motif\n   log               Afficher l'historique des validations\n   show              Afficher diff\xc3\xa9rents types d'objets\n   status            Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch            Lister, cr\xc3\xa9er ou supprimer des branches\n   commit            Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge             Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase            R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset             R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch            Basculer de branche\n   tag               Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch             T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull              Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push              Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m11:58:30.861835 [debug] [MainThread]: STDERR: "b''"
+[0m11:58:30.865283 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:58:30.866330 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:58:30.866553 [debug] [MainThread]: On debug: select 1 as id
+[0m11:58:30.866785 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:58:31.849488 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m11:58:31.850604 [debug] [MainThread]: On debug: Close
+[0m11:58:32.051358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878adf87c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878ad961f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878ad96640>]}
+[0m11:58:32.051891 [debug] [MainThread]: Flushing usage events
+[0m11:58:32.722331 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 12:19:05.284557 | 6a6d9027-ae2a-405e-be0d-fb6f03bbaf45 ==============================
+[0m12:19:05.284557 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:19:05.288370 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:19:05.288556 [debug] [MainThread]: Tracking: tracking
+[0m12:19:05.288936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11930db2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11930dbdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11930dbd00>]}
+[0m12:19:05.301347 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:19:05.301801 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:19:05.326209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6a6d9027-ae2a-405e-be0d-fb6f03bbaf45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1193153d60>]}
+[0m12:19:06.083339 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:19:06.096282 [debug] [MainThread]: 1699: static parser successfully parsed src/src_hosts.sql
+[0m12:19:06.099817 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:19:06.103432 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:19:06.153922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1191d714c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1191d22e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1191d22a90>]}
+[0m12:19:06.154454 [debug] [MainThread]: Flushing usage events
+[0m12:19:06.913399 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_learn.src_listings' (models/src/src_listings.sql) depends on a source named 'airbnb.listings' which was not found
+
+
+============================== 2023-04-25 12:25:03.200438 | d30cc5f8-cd7b-42ba-84d0-0bc81b37861f ==============================
+[0m12:25:03.200438 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:25:03.204062 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:25:03.204257 [debug] [MainThread]: Tracking: tracking
+[0m12:25:03.204631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb606eec280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb606eecdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb606eeccd0>]}
+[0m12:25:03.235750 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:25:03.236232 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:25:03.236564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd30cc5f8-cd7b-42ba-84d0-0bc81b37861f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb606f61b20>]}
+[0m12:25:03.978449 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:25:03.991670 [debug] [MainThread]: 1699: static parser successfully parsed src/src_reviews.sql
+[0m12:25:03.995214 [debug] [MainThread]: 1699: static parser successfully parsed src/src_hosts.sql
+[0m12:25:03.998571 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:25:04.002251 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:25:04.053523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb605b01c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb605b26550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb605b72f70>]}
+[0m12:25:04.053887 [debug] [MainThread]: Flushing usage events
+[0m12:25:04.777477 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_learn.src_listings' (models/src/src_listings.sql) depends on a source named 'airbnb.listings' which was not found
+
+
+============================== 2023-04-25 12:26:56.585425 | 2ce444fb-7a29-4dee-8924-b17dc82211e5 ==============================
+[0m12:26:56.585425 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:26:56.588847 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:26:56.589031 [debug] [MainThread]: Tracking: tracking
+[0m12:26:56.589392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f355369d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f355369ddf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f355369dd00>]}
+[0m12:26:56.619293 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:26:56.619715 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:26:56.620046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2ce444fb-7a29-4dee-8924-b17dc82211e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3553717d30>]}
+[0m12:26:57.382496 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:26:57.396011 [debug] [MainThread]: 1699: static parser successfully parsed src/src_reviews.sql
+[0m12:26:57.399691 [debug] [MainThread]: 1699: static parser successfully parsed src/src_hosts.sql
+[0m12:26:57.403228 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:26:57.407149 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:26:57.459264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f35522c3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3552302940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3552302100>]}
+[0m12:26:57.459648 [debug] [MainThread]: Flushing usage events
+[0m12:26:58.259557 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_learn.src_reviews' (models/src/src_reviews.sql) depends on a source named 'airbnb.reviews' which was not found
+
+
+============================== 2023-04-25 12:27:27.016199 | 683381f1-d3d9-402b-a214-6ce7963c4ae3 ==============================
+[0m12:27:27.016199 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:27:27.019704 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:27:27.019886 [debug] [MainThread]: Tracking: tracking
+[0m12:27:27.020253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21309c12b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21309c1df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21309c1d00>]}
+[0m12:27:27.051465 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:27:27.051938 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:27:27.052275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '683381f1-d3d9-402b-a214-6ce7963c4ae3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2131a53d30>]}
+[0m12:27:27.812909 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:27:27.825918 [debug] [MainThread]: 1699: static parser successfully parsed src/src_reviews.sql
+[0m12:27:27.829457 [debug] [MainThread]: 1699: static parser successfully parsed src/src_hosts.sql
+[0m12:27:27.833018 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:27:27.836887 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:27:27.912530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '683381f1-d3d9-402b-a214-6ce7963c4ae3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21306af0d0>]}
+[0m12:27:27.918151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '683381f1-d3d9-402b-a214-6ce7963c4ae3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2131a53a30>]}
+[0m12:27:27.918496 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:27:27.918846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '683381f1-d3d9-402b-a214-6ce7963c4ae3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21309c1d60>]}
+[0m12:27:27.920082 [info ] [MainThread]: 
+[0m12:27:27.921578 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:27:27.922846 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:27:27.943031 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:27:27.943361 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:27:27.943566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:27:28.992502 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdceb-0000-1acb-0000-00003fc132fd
+[0m12:27:28.992877 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:27:28.993261 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:27:28.993467 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:27:28.993824 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:27:29.188500 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:27:29.188809 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:27:29.189060 [info ] [MainThread]: 
+[0m12:27:29.189472 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.27 seconds (1.27s).
+[0m12:27:29.189975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2130681280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2130608070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21305d2370>]}
+[0m12:27:29.190253 [debug] [MainThread]: Flushing usage events
+[0m12:27:29.944675 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:28:50.454605 | 98a8dd01-045d-46aa-acda-0d86bdc0c100 ==============================
+[0m12:28:50.454605 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:28:50.458149 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:28:50.458334 [debug] [MainThread]: Tracking: tracking
+[0m12:28:50.458695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff323e2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff323edf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff323ed00>]}
+[0m12:28:50.470399 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:28:50.522251 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 0 files added, 0 files changed.
+[0m12:28:50.522625 [debug] [MainThread]: Partial parsing: deleted file: dbt_learn://models/src/src_listings.sql
+[0m12:28:50.522782 [debug] [MainThread]: Partial parsing: deleted file: dbt_learn://models/src/src_hosts.sql
+[0m12:28:50.533919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98a8dd01-045d-46aa-acda-0d86bdc0c100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff20fd0d0>]}
+[0m12:28:50.539634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98a8dd01-045d-46aa-acda-0d86bdc0c100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff211cd60>]}
+[0m12:28:50.539998 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:28:50.540353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98a8dd01-045d-46aa-acda-0d86bdc0c100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff211cfa0>]}
+[0m12:28:50.541523 [info ] [MainThread]: 
+[0m12:28:50.543071 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:28:50.544114 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:28:50.557946 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:28:50.558238 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:28:50.558448 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:51.563504 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcec-0000-1ac8-0000-00003fc122d5
+[0m12:28:51.563800 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:28:51.564061 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:28:51.564185 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:28:51.564418 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:28:51.791254 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:28:51.791548 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:28:51.791781 [info ] [MainThread]: 
+[0m12:28:51.792167 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.25 seconds (1.25s).
+[0m12:28:51.792650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff324e820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff211cfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ff203e100>]}
+[0m12:28:51.792922 [debug] [MainThread]: Flushing usage events
+[0m12:28:52.584422 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:29:10.521241 | 67a36e4c-ef12-452c-82c8-0b0a652c9c1f ==============================
+[0m12:29:10.521241 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:29:10.522796 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m12:29:10.522968 [debug] [MainThread]: Tracking: tracking
+[0m12:29:10.526321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd45eca4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd45eca400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd45ecad60>]}
+[0m12:29:10.763460 [debug] [MainThread]: Executing "git --help"
+[0m12:29:10.767330 [debug] [MainThread]: STDOUT: "b"usage : git [--version] [--help] [-C <chemin>] [-c <nom>=<valeur>]\n           [--exec-path[=<chemin>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<chemin>] [--work-tree=<chemin>] [--namespace=<nom>]\n           <commande> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone             Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init              Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add               Ajouter le contenu de fichiers dans l'index\n   mv                D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore           restaurer les fichiers l'arbre de travail\n   rm                Supprimer des fichiers de la copie de travail et de l'index\n   sparse-checkout   Initialiser et modifier l'extraction partielle\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect            Trouver par recherche binaire la modification qui a introduit un bogue\n   diff              Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep              Afficher les lignes correspondant \xc3\xa0 un motif\n   log               Afficher l'historique des validations\n   show              Afficher diff\xc3\xa9rents types d'objets\n   status            Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch            Lister, cr\xc3\xa9er ou supprimer des branches\n   commit            Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge             Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase            R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset             R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch            Basculer de branche\n   tag               Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch             T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull              Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push              Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m12:29:10.767680 [debug] [MainThread]: STDERR: "b''"
+[0m12:29:10.771077 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:29:10.772105 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:29:10.772328 [debug] [MainThread]: On debug: select 1 as id
+[0m12:29:10.772564 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:29:11.664651 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:29:11.665777 [debug] [MainThread]: On debug: Close
+[0m12:29:11.866953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd41d2a640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd41cc81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd41cc8610>]}
+[0m12:29:11.867478 [debug] [MainThread]: Flushing usage events
+[0m12:29:12.568537 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 12:30:55.383918 | cbfb663d-de22-4e81-958d-a6d588dbf0ff ==============================
+[0m12:30:55.383918 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:30:55.387339 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:30:55.387526 [debug] [MainThread]: Tracking: tracking
+[0m12:30:55.387882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2270689250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2270689d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2270689ca0>]}
+[0m12:30:55.417741 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:30:55.451234 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m12:30:55.451705 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/src/src_listings.sql
+[0m12:30:55.451879 [debug] [MainThread]: Partial parsing: deleted file: dbt_learn://models/src/src_reviews.sql
+[0m12:30:55.472970 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:30:55.494537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cbfb663d-de22-4e81-958d-a6d588dbf0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f226f553b50>]}
+[0m12:30:55.500922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cbfb663d-de22-4e81-958d-a6d588dbf0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f227069a8e0>]}
+[0m12:30:55.501268 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:30:55.501626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbfb663d-de22-4e81-958d-a6d588dbf0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f227069a1f0>]}
+[0m12:30:55.502826 [info ] [MainThread]: 
+[0m12:30:55.504435 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:30:55.505424 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:30:55.519214 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:30:55.519518 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:30:55.519721 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:30:56.426754 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcee-0000-1ac8-0000-00003fc122d9
+[0m12:30:56.427305 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:30:56.427566 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:30:56.427683 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:30:56.427921 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:30:56.634483 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:30:56.634781 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:30:56.634997 [info ] [MainThread]: 
+[0m12:30:56.635373 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m12:30:56.635870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f227069a2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f226f338940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f226f2e0190>]}
+[0m12:30:56.636142 [debug] [MainThread]: Flushing usage events
+[0m12:30:57.351015 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:31:40.233094 | 641bfa74-ce22-424f-8fca-dd3cb40c144c ==============================
+[0m12:31:40.233094 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:31:40.236754 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:31:40.236932 [debug] [MainThread]: Tracking: tracking
+[0m12:31:40.237307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8b05280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8b05dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8b05cd0>]}
+[0m12:31:40.266124 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:31:40.303169 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:31:40.303652 [debug] [MainThread]: Partial parsing: updated file: dbt_learn://models/src/src_listings.sql
+[0m12:31:40.325752 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:31:40.347108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '641bfa74-ce22-424f-8fca-dd3cb40c144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc79cfd60>]}
+[0m12:31:40.353567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '641bfa74-ce22-424f-8fca-dd3cb40c144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8a5d730>]}
+[0m12:31:40.353981 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:31:40.354411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '641bfa74-ce22-424f-8fca-dd3cb40c144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8a5d760>]}
+[0m12:31:40.355700 [info ] [MainThread]: 
+[0m12:31:40.357299 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:31:40.358333 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:31:40.372272 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:31:40.372579 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:31:40.372815 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:31:41.293418 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcef-0000-1ac8-0000-00003fc122dd
+[0m12:31:41.293718 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:31:41.293986 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:31:41.294112 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:31:41.294347 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:31:41.463024 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:31:41.463324 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:31:41.463603 [info ] [MainThread]: 
+[0m12:31:41.464021 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.11 seconds (1.11s).
+[0m12:31:41.464525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc77b97c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc8a5d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dc77615e0>]}
+[0m12:31:41.464809 [debug] [MainThread]: Flushing usage events
+[0m12:31:42.176541 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:33:49.740061 | 222adaf7-d82b-4318-a352-6501dec5bc24 ==============================
+[0m12:33:49.740061 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:33:49.743876 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:33:49.744060 [debug] [MainThread]: Tracking: tracking
+[0m12:33:49.744439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfcf822b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfcf82df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfcf82d00>]}
+[0m12:33:49.774660 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:33:49.808668 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:33:49.809226 [debug] [MainThread]: Partial parsing: updated file: dbt_learn://models/src/src_listings.sql
+[0m12:33:49.829902 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:33:49.852543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '222adaf7-d82b-4318-a352-6501dec5bc24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfce4dc10>]}
+[0m12:33:49.859213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '222adaf7-d82b-4318-a352-6501dec5bc24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfced9760>]}
+[0m12:33:49.859609 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:33:49.859961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '222adaf7-d82b-4318-a352-6501dec5bc24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfced9790>]}
+[0m12:33:49.861143 [info ] [MainThread]: 
+[0m12:33:49.862715 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:33:49.863723 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:33:49.877624 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:33:49.877943 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:33:49.878153 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:53.712710 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcf1-0000-1acb-0000-00003fc13305
+[0m12:33:53.713027 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:33:53.713309 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:33:53.713441 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:33:53.713680 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:33:55.492146 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:33:55.492459 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:33:55.492714 [info ] [MainThread]: 
+[0m12:33:55.493145 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 5.63 seconds (5.63s).
+[0m12:33:55.493676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfcc397f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfced9700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfcbdd610>]}
+[0m12:33:55.493966 [debug] [MainThread]: Flushing usage events
+[0m12:34:00.801921 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:35:34.912846 | f678ef06-998f-4193-9f94-46d24fac255b ==============================
+[0m12:35:34.912846 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:35:34.927015 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:35:34.927225 [debug] [MainThread]: Tracking: tracking
+[0m12:35:34.927636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c66e542b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c66e54df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c66e54d00>]}
+[0m12:35:34.939706 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:35:34.980004 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:35:34.980516 [debug] [MainThread]: Partial parsing: updated file: dbt_learn://models/src/src_listings.sql
+[0m12:35:35.001678 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:35:35.028638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f678ef06-998f-4193-9f94-46d24fac255b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65d0c100>]}
+[0m12:35:35.035167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f678ef06-998f-4193-9f94-46d24fac255b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65d997c0>]}
+[0m12:35:35.035583 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:35:35.035955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f678ef06-998f-4193-9f94-46d24fac255b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65d997f0>]}
+[0m12:35:35.037184 [info ] [MainThread]: 
+[0m12:35:35.038755 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:35:35.039812 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:35:35.056352 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:35:35.056717 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:35:35.056941 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:35:40.722547 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcf3-0000-1ac8-0000-00003fc122e1
+[0m12:35:40.723127 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:35:40.723472 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:35:40.723632 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:35:40.724091 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:35:42.882424 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:35:42.882726 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:35:42.882986 [info ] [MainThread]: 
+[0m12:35:42.883425 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 7.85 seconds (7.85s).
+[0m12:35:42.883972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65d0c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65d99760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c65a9d910>]}
+[0m12:35:42.884260 [debug] [MainThread]: Flushing usage events
+[0m12:35:49.459288 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:36:47.186873 | 1eb642b8-29f4-48d1-a85e-c9a9669d3ff1 ==============================
+[0m12:36:47.186873 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:36:47.190439 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:36:47.190622 [debug] [MainThread]: Tracking: tracking
+[0m12:36:47.190974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f2e442b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f2e44df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f2e44d00>]}
+[0m12:36:47.202742 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:36:47.253586 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:36:47.254190 [debug] [MainThread]: Partial parsing: updated file: dbt_learn://models/src/src_listings.sql
+[0m12:36:47.276281 [debug] [MainThread]: 1699: static parser successfully parsed src/src_listings.sql
+[0m12:36:47.303404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1eb642b8-29f4-48d1-a85e-c9a9669d3ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1d10fd0>]}
+[0m12:36:47.309424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1eb642b8-29f4-48d1-a85e-c9a9669d3ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1d99820>]}
+[0m12:36:47.309817 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:36:47.310185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1eb642b8-29f4-48d1-a85e-c9a9669d3ff1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1d99790>]}
+[0m12:36:47.311391 [info ] [MainThread]: 
+[0m12:36:47.312957 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:36:47.313934 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:36:47.333748 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:36:47.334086 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:36:47.334294 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:36:48.269839 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcf4-0000-1ac8-0000-00003fc122e9
+[0m12:36:48.270198 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:36:48.270529 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:36:48.270702 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:36:48.271027 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:36:48.494449 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:36:48.494757 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:36:48.495029 [info ] [MainThread]: 
+[0m12:36:48.495436 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.18 seconds (1.18s).
+[0m12:36:48.495936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1d10bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1d99700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21f1a9c6a0>]}
+[0m12:36:48.496214 [debug] [MainThread]: Flushing usage events
+[0m12:36:49.304479 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 12:41:15.385935 | 54eed190-5299-4a94-be43-5acaa6844505 ==============================
+[0m12:41:15.385935 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:41:15.387437 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m12:41:15.387606 [debug] [MainThread]: Tracking: tracking
+[0m12:41:15.391543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3141bda220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3144f74fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3141bda2b0>]}
+[0m12:41:15.665820 [debug] [MainThread]: Executing "git --help"
+[0m12:41:15.670400 [debug] [MainThread]: STDOUT: "b"usage : git [--version] [--help] [-C <chemin>] [-c <nom>=<valeur>]\n           [--exec-path[=<chemin>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<chemin>] [--work-tree=<chemin>] [--namespace=<nom>]\n           <commande> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone             Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init              Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add               Ajouter le contenu de fichiers dans l'index\n   mv                D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore           restaurer les fichiers l'arbre de travail\n   rm                Supprimer des fichiers de la copie de travail et de l'index\n   sparse-checkout   Initialiser et modifier l'extraction partielle\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect            Trouver par recherche binaire la modification qui a introduit un bogue\n   diff              Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep              Afficher les lignes correspondant \xc3\xa0 un motif\n   log               Afficher l'historique des validations\n   show              Afficher diff\xc3\xa9rents types d'objets\n   status            Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch            Lister, cr\xc3\xa9er ou supprimer des branches\n   commit            Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge             Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase            R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset             R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch            Basculer de branche\n   tag               Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch             T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull              Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push              Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m12:41:15.670805 [debug] [MainThread]: STDERR: "b''"
+[0m12:41:15.675182 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:41:15.676415 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:41:15.676664 [debug] [MainThread]: On debug: select 1 as id
+[0m12:41:15.676897 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:41:16.556977 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:41:16.558119 [debug] [MainThread]: On debug: Close
+[0m12:41:16.806681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f313da396d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f313da39f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f313da39520>]}
+[0m12:41:16.807336 [debug] [MainThread]: Flushing usage events
+[0m12:41:17.553644 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 12:41:27.645522 | a647bff9-5ce9-4b4c-8008-11a443ec1dc5 ==============================
+[0m12:41:27.645522 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:41:27.650878 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:41:27.651083 [debug] [MainThread]: Tracking: tracking
+[0m12:41:27.651501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757b822b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757b82df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757b82d00>]}
+[0m12:41:27.683774 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:41:27.721939 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:41:27.722248 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:41:27.728779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a647bff9-5ce9-4b4c-8008-11a443ec1dc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757a690d0>]}
+[0m12:41:27.744995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a647bff9-5ce9-4b4c-8008-11a443ec1dc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757abd580>]}
+[0m12:41:27.745656 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:41:27.746201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a647bff9-5ce9-4b4c-8008-11a443ec1dc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757abd670>]}
+[0m12:41:27.747531 [info ] [MainThread]: 
+[0m12:41:27.749337 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:41:27.752093 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:41:27.768763 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:41:27.769090 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:41:27.769295 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:41:29.083960 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdcf9-0000-1acb-0000-00003fc1333d
+[0m12:41:29.084326 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m12:41:29.084667 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:41:29.084843 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:41:29.085170 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m12:41:29.256828 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:41:29.257129 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:41:29.257356 [info ] [MainThread]: 
+[0m12:41:29.257739 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.51 seconds (1.51s).
+[0m12:41:29.258229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757abd730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9757abd7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f975799c610>]}
+[0m12:41:29.258519 [debug] [MainThread]: Flushing usage events
+[0m12:41:29.960439 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 13:05:09.464213 | 69f3fb0d-8923-4260-87b6-41eac966ccd7 ==============================
+[0m13:05:09.464213 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:05:09.468225 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:05:09.468413 [debug] [MainThread]: Tracking: tracking
+[0m13:05:09.468802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55949022b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5594902df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5594902d00>]}
+[0m13:05:09.500498 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m13:05:09.532317 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m13:05:09.532762 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/src/dim_host.sql
+[0m13:05:09.532984 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/src/src_reviews.sql
+[0m13:05:09.533178 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/src/src_hosts.sql
+[0m13:05:09.554123 [debug] [MainThread]: 1699: static parser successfully parsed src/dim_host.sql
+[0m13:05:09.566830 [debug] [MainThread]: 1699: static parser successfully parsed src/src_reviews.sql
+[0m13:05:09.570263 [debug] [MainThread]: 1699: static parser successfully parsed src/src_hosts.sql
+[0m13:05:09.582780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '69f3fb0d-8923-4260-87b6-41eac966ccd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55937922b0>]}
+[0m13:05:09.588624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '69f3fb0d-8923-4260-87b6-41eac966ccd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55937f1c70>]}
+[0m13:05:09.588957 [info ] [MainThread]: Found 6 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m13:05:09.589315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '69f3fb0d-8923-4260-87b6-41eac966ccd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55937f1d90>]}
+[0m13:05:09.590578 [info ] [MainThread]: 
+[0m13:05:09.592059 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:05:09.593187 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m13:05:09.606913 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m13:05:09.607212 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m13:05:09.607417 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:05:10.612303 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdd11-0000-1ac8-0000-00003fc123a9
+[0m13:05:10.612693 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:05:10.613065 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:05:10.613253 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:05:10.613593 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m13:05:10.774816 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:05:10.775126 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m13:05:10.775377 [info ] [MainThread]: 
+[0m13:05:10.775787 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.18 seconds (1.18s).
+[0m13:05:10.776290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55937929d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55937f1be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55935021f0>]}
+[0m13:05:10.776573 [debug] [MainThread]: Flushing usage events
+[0m13:05:11.411859 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+
+============================== 2023-04-25 14:17:19.008223 | ac2ee3fa-975b-45d0-905b-10543a04ef60 ==============================
+[0m14:17:19.008223 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:17:19.011948 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m14:17:19.012137 [debug] [MainThread]: Tracking: tracking
+[0m14:17:19.012514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c32722b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c3272df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c3272d00>]}
+[0m14:17:19.044272 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m14:17:19.073894 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 4 files added, 0 files changed.
+[0m14:17:19.074463 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/schema.yml
+[0m14:17:19.074682 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/dim/dim_host.sql
+[0m14:17:19.074871 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/fct/fct_reviews.sql
+[0m14:17:19.075055 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/dim/dim_listings.sql
+[0m14:17:19.075198 [debug] [MainThread]: Partial parsing: deleted file: dbt_learn://models/src/dim_host.sql
+[0m14:17:19.095737 [debug] [MainThread]: 1699: static parser successfully parsed dim/dim_host.sql
+[0m14:17:19.108473 [debug] [MainThread]: 1603: static parser failed on fct/fct_reviews.sql
+[0m14:17:19.111446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c21ebe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c1ee4bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f55c1ee4cd0>]}
+[0m14:17:19.111722 [debug] [MainThread]: Flushing usage events
+[0m14:17:19.886986 [error] [MainThread]: Encountered an error:
+Compilation Error in model fct_reviews (models/fct/fct_reviews.sql)
+  unexpected '}', expected ')'
+    line 8
+      SELECT * FROM {{ ref('src_reviews'}}
+
+
+============================== 2023-04-25 14:18:39.038407 | 387e79c2-e7e9-42d4-9090-2051fb59efa7 ==============================
+[0m14:18:39.038407 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:18:39.042106 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m14:18:39.042291 [debug] [MainThread]: Tracking: tracking
+[0m14:18:39.042693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f499a687250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f499a687d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f499a687ca0>]}
+[0m14:18:39.054675 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m14:18:39.102993 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 4 files added, 0 files changed.
+[0m14:18:39.103448 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/fct/fct_reviews.sql
+[0m14:18:39.103841 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/schema.yml
+[0m14:18:39.104059 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/dim/dim_listings.sql
+[0m14:18:39.104256 [debug] [MainThread]: Partial parsing: added file: dbt_learn://models/dim/dim_host.sql
+[0m14:18:39.104406 [debug] [MainThread]: Partial parsing: deleted file: dbt_learn://models/src/dim_host.sql
+[0m14:18:39.131118 [debug] [MainThread]: 1603: static parser failed on fct/fct_reviews.sql
+[0m14:18:39.148851 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fct/fct_reviews.sql
+[0m14:18:39.150988 [debug] [MainThread]: 1699: static parser successfully parsed dim/dim_listings.sql
+[0m14:18:39.154483 [debug] [MainThread]: 1699: static parser successfully parsed dim/dim_host.sql
+[0m14:18:39.170694 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_hosts' in the 'models' section of file 'models/schema.yml'
+[0m14:18:39.263258 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_learn.relationships_dim_listings_host_id__host_id__ref_dim_hosts_.94f20ee5a1' (models/schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:18:39.264129 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_learn.not_null_dim_hosts_host_id.091b631476' (models/schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:18:39.264552 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_learn.unique_dim_hosts_host_id.d6a570a203' (models/schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:18:39.264955 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_learn.not_null_dim_hosts_host_name.03a9762184' (models/schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:18:39.265352 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_learn.accepted_values_dim_hosts_is_superhost__t__f.7b605383d4' (models/schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:18:39.277896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '387e79c2-e7e9-42d4-9090-2051fb59efa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49992b50d0>]}
+[0m14:18:39.291503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '387e79c2-e7e9-42d4-9090-2051fb59efa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49995e07f0>]}
+[0m14:18:39.291932 [info ] [MainThread]: Found 8 models, 11 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:18:39.292265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '387e79c2-e7e9-42d4-9090-2051fb59efa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49995e0940>]}
+[0m14:18:39.294075 [info ] [MainThread]: 
+[0m14:18:39.295671 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:18:39.296942 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_RAW'
+[0m14:18:39.312605 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_RAW"
+[0m14:18:39.312915 [debug] [ThreadPool]: On list_AIRBNB_RAW: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "connection_name": "list_AIRBNB_RAW"} */
+show terse objects in AIRBNB.RAW
+[0m14:18:39.313122 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:18:40.452068 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc12459
+[0m14:18:40.452382 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m14:18:40.452653 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m14:18:40.452782 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:18:40.452985 [debug] [ThreadPool]: On list_AIRBNB_RAW: Close
+[0m14:18:40.654140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '387e79c2-e7e9-42d4-9090-2051fb59efa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f499a687a90>]}
+[0m14:18:40.654905 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:18:40.655272 [info ] [MainThread]: 
+[0m14:18:40.659048 [debug] [Thread-1  ]: Began running node test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c
+[0m14:18:40.659249 [info ] [Thread-1  ]: 1 of 11 START test accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room  [RUN]
+[0m14:18:40.659654 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c'
+[0m14:18:40.659807 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c
+[0m14:18:40.664329 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c"
+[0m14:18:40.664652 [debug] [Thread-1  ]: Timing info for test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c (compile): 2023-04-25 14:18:40.659912 => 2023-04-25 14:18:40.664597
+[0m14:18:40.664805 [debug] [Thread-1  ]: Began executing node test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c
+[0m14:18:40.678588 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c"
+[0m14:18:40.679307 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c"
+[0m14:18:40.679449 [debug] [Thread-1  ]: On test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        room_type as value_field,
+        count(*) as n_records
+
+    from AIRBNB.RAW.dim_listings
+    group by room_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Entire home/apt','Private room','Shared room','Hotel room'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:40.679582 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:41.800253 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1acb-0000-00003fc1345d
+[0m14:18:41.800466 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:41.800687 [debug] [Thread-1  ]: Timing info for test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c (execute): 2023-04-25 14:18:40.664896 => 2023-04-25 14:18:41.800631
+[0m14:18:41.800830 [debug] [Thread-1  ]: On test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c: Close
+[0m14:18:42.017600 [debug] [Thread-1  ]: Database Error in test accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/accepted_values_dim_listings_187fbd1e80835aa3e276f9355628fe50.sql
+[0m14:18:42.017975 [error] [Thread-1  ]: 1 of 11 ERROR accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room  [[31mERROR[0m in 1.36s]
+[0m14:18:42.019048 [debug] [Thread-1  ]: Finished running node test.dbt_learn.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c
+[0m14:18:42.019278 [debug] [Thread-1  ]: Began running node test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef
+[0m14:18:42.019532 [info ] [Thread-1  ]: 2 of 11 START test accepted_values_fct_reviews_review_sentiment__positive__neutral__negative  [RUN]
+[0m14:18:42.019979 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef'
+[0m14:18:42.020116 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef
+[0m14:18:42.023921 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef"
+[0m14:18:42.024152 [debug] [Thread-1  ]: Timing info for test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef (compile): 2023-04-25 14:18:42.020208 => 2023-04-25 14:18:42.024110
+[0m14:18:42.024293 [debug] [Thread-1  ]: Began executing node test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef
+[0m14:18:42.025767 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef"
+[0m14:18:42.026248 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef"
+[0m14:18:42.026365 [debug] [Thread-1  ]: On test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        review_sentiment as value_field,
+        count(*) as n_records
+
+    from AIRBNB.RAW.fct_reviews
+    group by review_sentiment
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'positive','neutral','negative'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:42.026481 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:42.854998 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc1245d
+[0m14:18:42.855289 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:42.855592 [debug] [Thread-1  ]: Timing info for test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef (execute): 2023-04-25 14:18:42.024380 => 2023-04-25 14:18:42.855525
+[0m14:18:42.855786 [debug] [Thread-1  ]: On test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef: Close
+[0m14:18:43.099743 [debug] [Thread-1  ]: Database Error in test accepted_values_fct_reviews_review_sentiment__positive__neutral__negative (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/accepted_values_fct_reviews_beb36f129a533890a78cc01ac370ef78.sql
+[0m14:18:43.100197 [error] [Thread-1  ]: 2 of 11 ERROR accepted_values_fct_reviews_review_sentiment__positive__neutral__negative  [[31mERROR[0m in 1.08s]
+[0m14:18:43.100646 [debug] [Thread-1  ]: Finished running node test.dbt_learn.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef
+[0m14:18:43.100939 [debug] [Thread-1  ]: Began running node test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2
+[0m14:18:43.101242 [info ] [Thread-1  ]: 3 of 11 START test not_null_dim_listings_host_id ............................... [RUN]
+[0m14:18:43.101843 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2'
+[0m14:18:43.102048 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2
+[0m14:18:43.108643 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2"
+[0m14:18:43.108962 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2 (compile): 2023-04-25 14:18:43.102187 => 2023-04-25 14:18:43.108910
+[0m14:18:43.109171 [debug] [Thread-1  ]: Began executing node test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2
+[0m14:18:43.111501 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2"
+[0m14:18:43.112123 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2"
+[0m14:18:43.112290 [debug] [Thread-1  ]: On test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select host_id
+from AIRBNB.RAW.dim_listings
+where host_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:43.112449 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:44.055259 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc12461
+[0m14:18:44.055484 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:44.055690 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2 (execute): 2023-04-25 14:18:43.109306 => 2023-04-25 14:18:44.055637
+[0m14:18:44.055845 [debug] [Thread-1  ]: On test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2: Close
+[0m14:18:44.334034 [debug] [Thread-1  ]: Database Error in test not_null_dim_listings_host_id (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/not_null_dim_listings_host_id.sql
+[0m14:18:44.334496 [error] [Thread-1  ]: 3 of 11 ERROR not_null_dim_listings_host_id .................................... [[31mERROR[0m in 1.23s]
+[0m14:18:44.334943 [debug] [Thread-1  ]: Finished running node test.dbt_learn.not_null_dim_listings_host_id.b1db6ea6c2
+[0m14:18:44.335243 [debug] [Thread-1  ]: Began running node test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c
+[0m14:18:44.335541 [info ] [Thread-1  ]: 4 of 11 START test not_null_dim_listings_listing_id ............................ [RUN]
+[0m14:18:44.336171 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c'
+[0m14:18:44.336472 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c
+[0m14:18:44.416920 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c"
+[0m14:18:44.417397 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c (compile): 2023-04-25 14:18:44.336628 => 2023-04-25 14:18:44.417320
+[0m14:18:44.417630 [debug] [Thread-1  ]: Began executing node test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c
+[0m14:18:44.420388 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c"
+[0m14:18:44.421265 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c"
+[0m14:18:44.421448 [debug] [Thread-1  ]: On test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select listing_id
+from AIRBNB.RAW.dim_listings
+where listing_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:44.421613 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:45.309579 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ae3-0000-00003fc14005
+[0m14:18:45.310413 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:45.310772 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c (execute): 2023-04-25 14:18:44.417767 => 2023-04-25 14:18:45.310701
+[0m14:18:45.310977 [debug] [Thread-1  ]: On test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c: Close
+[0m14:18:45.598753 [debug] [Thread-1  ]: Database Error in test not_null_dim_listings_listing_id (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/not_null_dim_listings_listing_id.sql
+[0m14:18:45.599210 [error] [Thread-1  ]: 4 of 11 ERROR not_null_dim_listings_listing_id ................................. [[31mERROR[0m in 1.26s]
+[0m14:18:45.599637 [debug] [Thread-1  ]: Finished running node test.dbt_learn.not_null_dim_listings_listing_id.7cf2f13e6c
+[0m14:18:45.599933 [debug] [Thread-1  ]: Began running node test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88
+[0m14:18:45.600229 [info ] [Thread-1  ]: 5 of 11 START test not_null_fct_reviews_reviewer_name .......................... [RUN]
+[0m14:18:45.600854 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88'
+[0m14:18:45.601075 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88
+[0m14:18:45.605230 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88"
+[0m14:18:45.605590 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88 (compile): 2023-04-25 14:18:45.601215 => 2023-04-25 14:18:45.605526
+[0m14:18:45.605808 [debug] [Thread-1  ]: Began executing node test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88
+[0m14:18:45.609883 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88"
+[0m14:18:45.611714 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88"
+[0m14:18:45.611903 [debug] [Thread-1  ]: On test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select reviewer_name
+from AIRBNB.RAW.fct_reviews
+where reviewer_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:45.612071 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:46.479547 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1acb-0000-00003fc13461
+[0m14:18:46.479835 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:46.480138 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88 (execute): 2023-04-25 14:18:45.605945 => 2023-04-25 14:18:46.480073
+[0m14:18:46.480340 [debug] [Thread-1  ]: On test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88: Close
+[0m14:18:46.757190 [debug] [Thread-1  ]: Database Error in test not_null_fct_reviews_reviewer_name (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/not_null_fct_reviews_reviewer_name.sql
+[0m14:18:46.757639 [error] [Thread-1  ]: 5 of 11 ERROR not_null_fct_reviews_reviewer_name ............................... [[31mERROR[0m in 1.16s]
+[0m14:18:46.758073 [debug] [Thread-1  ]: Finished running node test.dbt_learn.not_null_fct_reviews_reviewer_name.8204e43c88
+[0m14:18:46.758374 [debug] [Thread-1  ]: Began running node test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:18:46.758669 [info ] [Thread-1  ]: 6 of 11 START test not_null_my_first_dbt_model_id .............................. [RUN]
+[0m14:18:46.759231 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m14:18:46.759433 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:18:46.763517 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:18:46.763881 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-04-25 14:18:46.759571 => 2023-04-25 14:18:46.763829
+[0m14:18:46.764090 [debug] [Thread-1  ]: Began executing node test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:18:46.766392 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:18:46.767057 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:18:46.767226 [debug] [Thread-1  ]: On test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from AIRBNB.RAW.my_first_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:46.767391 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:47.582500 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc12465
+[0m14:18:47.582789 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:47.583096 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-04-25 14:18:46.764223 => 2023-04-25 14:18:47.583028
+[0m14:18:47.583294 [debug] [Thread-1  ]: On test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m14:18:48.057281 [debug] [Thread-1  ]: Database Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m14:18:48.057720 [error] [Thread-1  ]: 6 of 11 ERROR not_null_my_first_dbt_model_id ................................... [[31mERROR[0m in 1.30s]
+[0m14:18:48.058150 [debug] [Thread-1  ]: Finished running node test.dbt_learn.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:18:48.058437 [debug] [Thread-1  ]: Began running node test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778
+[0m14:18:48.058724 [info ] [Thread-1  ]: 7 of 11 START test not_null_my_second_dbt_model_id ............................. [RUN]
+[0m14:18:48.059264 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778'
+[0m14:18:48.059464 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778
+[0m14:18:48.063485 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:18:48.063788 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-04-25 14:18:48.059599 => 2023-04-25 14:18:48.063737
+[0m14:18:48.063993 [debug] [Thread-1  ]: Began executing node test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778
+[0m14:18:48.066340 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:18:48.067003 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:18:48.067169 [debug] [Thread-1  ]: On test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from AIRBNB.RAW.my_second_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:48.067330 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:48.922420 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc12469
+[0m14:18:48.922670 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:48.922886 [debug] [Thread-1  ]: Timing info for test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-04-25 14:18:48.064126 => 2023-04-25 14:18:48.922831
+[0m14:18:48.923036 [debug] [Thread-1  ]: On test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m14:18:49.281153 [debug] [Thread-1  ]: Database Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m14:18:49.281604 [error] [Thread-1  ]: 7 of 11 ERROR not_null_my_second_dbt_model_id .................................. [[31mERROR[0m in 1.22s]
+[0m14:18:49.282030 [debug] [Thread-1  ]: Finished running node test.dbt_learn.not_null_my_second_dbt_model_id.151b76d778
+[0m14:18:49.282314 [debug] [Thread-1  ]: Began running node test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7
+[0m14:18:49.282600 [info ] [Thread-1  ]: 8 of 11 START test relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_  [RUN]
+[0m14:18:49.283147 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7'
+[0m14:18:49.283345 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7
+[0m14:18:49.288712 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7"
+[0m14:18:49.289085 [debug] [Thread-1  ]: Timing info for test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7 (compile): 2023-04-25 14:18:49.283483 => 2023-04-25 14:18:49.289023
+[0m14:18:49.289297 [debug] [Thread-1  ]: Began executing node test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7
+[0m14:18:49.291718 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7"
+[0m14:18:49.292687 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7"
+[0m14:18:49.292854 [debug] [Thread-1  ]: On test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select listing_id as from_field
+    from AIRBNB.RAW.fct_reviews
+    where listing_id is not null
+),
+
+parent as (
+    select listing_id as to_field
+    from AIRBNB.RAW.dim_listings
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:49.293018 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:50.302536 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ae3-0000-00003fc14009
+[0m14:18:50.302832 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:50.303142 [debug] [Thread-1  ]: Timing info for test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7 (execute): 2023-04-25 14:18:49.289432 => 2023-04-25 14:18:50.303071
+[0m14:18:50.303342 [debug] [Thread-1  ]: On test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7: Close
+[0m14:18:50.655792 [debug] [Thread-1  ]: Database Error in test relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_ (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/relationships_fct_reviews_11a92bfba430013beaafbab1587e0c3d.sql
+[0m14:18:50.656442 [error] [Thread-1  ]: 8 of 11 ERROR relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_  [[31mERROR[0m in 1.37s]
+[0m14:18:50.656986 [debug] [Thread-1  ]: Finished running node test.dbt_learn.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7
+[0m14:18:50.657367 [debug] [Thread-1  ]: Began running node test.dbt_learn.unique_dim_listings_listing_id.bbd176f487
+[0m14:18:50.657673 [info ] [Thread-1  ]: 9 of 11 START test unique_dim_listings_listing_id .............................. [RUN]
+[0m14:18:50.658305 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.unique_dim_listings_listing_id.bbd176f487'
+[0m14:18:50.658511 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.unique_dim_listings_listing_id.bbd176f487
+[0m14:18:50.664726 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.unique_dim_listings_listing_id.bbd176f487"
+[0m14:18:50.665042 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_dim_listings_listing_id.bbd176f487 (compile): 2023-04-25 14:18:50.658652 => 2023-04-25 14:18:50.664986
+[0m14:18:50.665249 [debug] [Thread-1  ]: Began executing node test.dbt_learn.unique_dim_listings_listing_id.bbd176f487
+[0m14:18:50.667560 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.unique_dim_listings_listing_id.bbd176f487"
+[0m14:18:50.668326 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.unique_dim_listings_listing_id.bbd176f487"
+[0m14:18:50.668497 [debug] [Thread-1  ]: On test.dbt_learn.unique_dim_listings_listing_id.bbd176f487: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.unique_dim_listings_listing_id.bbd176f487"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    listing_id as unique_field,
+    count(*) as n_records
+
+from AIRBNB.RAW.dim_listings
+where listing_id is not null
+group by listing_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:50.668661 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:51.609303 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ac8-0000-00003fc1246d
+[0m14:18:51.609531 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:51.609745 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_dim_listings_listing_id.bbd176f487 (execute): 2023-04-25 14:18:50.665383 => 2023-04-25 14:18:51.609690
+[0m14:18:51.609889 [debug] [Thread-1  ]: On test.dbt_learn.unique_dim_listings_listing_id.bbd176f487: Close
+[0m14:18:51.881071 [debug] [Thread-1  ]: Database Error in test unique_dim_listings_listing_id (models/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/schema.yml/unique_dim_listings_listing_id.sql
+[0m14:18:51.881521 [error] [Thread-1  ]: 9 of 11 ERROR unique_dim_listings_listing_id ................................... [[31mERROR[0m in 1.22s]
+[0m14:18:51.881944 [debug] [Thread-1  ]: Finished running node test.dbt_learn.unique_dim_listings_listing_id.bbd176f487
+[0m14:18:51.882237 [debug] [Thread-1  ]: Began running node test.dbt_learn.unique_my_first_dbt_model_id.16e066b321
+[0m14:18:51.882524 [info ] [Thread-1  ]: 10 of 11 START test unique_my_first_dbt_model_id ............................... [RUN]
+[0m14:18:51.883123 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.unique_my_first_dbt_model_id.16e066b321'
+[0m14:18:51.883847 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.unique_my_first_dbt_model_id.16e066b321
+[0m14:18:51.888426 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.unique_my_first_dbt_model_id.16e066b321"
+[0m14:18:51.888825 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-04-25 14:18:51.884009 => 2023-04-25 14:18:51.888761
+[0m14:18:51.889046 [debug] [Thread-1  ]: Began executing node test.dbt_learn.unique_my_first_dbt_model_id.16e066b321
+[0m14:18:51.891780 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.unique_my_first_dbt_model_id.16e066b321"
+[0m14:18:51.892590 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.unique_my_first_dbt_model_id.16e066b321"
+[0m14:18:51.892760 [debug] [Thread-1  ]: On test.dbt_learn.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from AIRBNB.RAW.my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:51.892922 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:52.652405 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ae3-0000-00003fc1400d
+[0m14:18:52.652632 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:52.652853 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-04-25 14:18:51.889184 => 2023-04-25 14:18:52.652798
+[0m14:18:52.652994 [debug] [Thread-1  ]: On test.dbt_learn.unique_my_first_dbt_model_id.16e066b321: Close
+[0m14:18:53.196048 [debug] [Thread-1  ]: Database Error in test unique_my_first_dbt_model_id (models/example/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m14:18:53.196595 [error] [Thread-1  ]: 10 of 11 ERROR unique_my_first_dbt_model_id .................................... [[31mERROR[0m in 1.31s]
+[0m14:18:53.197258 [debug] [Thread-1  ]: Finished running node test.dbt_learn.unique_my_first_dbt_model_id.16e066b321
+[0m14:18:53.197579 [debug] [Thread-1  ]: Began running node test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:18:53.197899 [info ] [Thread-1  ]: 11 of 11 START test unique_my_second_dbt_model_id .............................. [RUN]
+[0m14:18:53.198580 [debug] [Thread-1  ]: Acquiring new snowflake connection 'test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493'
+[0m14:18:53.198787 [debug] [Thread-1  ]: Began compiling node test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:18:53.203424 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:18:53.204246 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-04-25 14:18:53.198931 => 2023-04-25 14:18:53.204156
+[0m14:18:53.204500 [debug] [Thread-1  ]: Began executing node test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:18:53.208095 [debug] [Thread-1  ]: Writing runtime sql for node "test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:18:53.209010 [debug] [Thread-1  ]: Using snowflake connection "test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:18:53.209198 [debug] [Thread-1  ]: On test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt_learn", "target_name": "dev", "node_id": "test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from AIRBNB.RAW.my_second_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:18:53.209364 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:18:54.102459 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01abdd5a-0000-1ae3-0000-00003fc14011
+[0m14:18:54.102756 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.103089 [debug] [Thread-1  ]: Timing info for test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-04-25 14:18:53.204646 => 2023-04-25 14:18:54.103020
+[0m14:18:54.103292 [debug] [Thread-1  ]: On test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m14:18:54.336016 [debug] [Thread-1  ]: Database Error in test unique_my_second_dbt_model_id (models/example/schema.yml)
+  002003 (02000): SQL compilation error:
+  Database 'AIRBNB' does not exist or not authorized.
+  compiled Code at target/run/dbt_learn/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m14:18:54.336491 [error] [Thread-1  ]: 11 of 11 ERROR unique_my_second_dbt_model_id ................................... [[31mERROR[0m in 1.14s]
+[0m14:18:54.336975 [debug] [Thread-1  ]: Finished running node test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:18:54.338602 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:18:54.339150 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:18:54.339315 [debug] [MainThread]: Connection 'test.dbt_learn.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:18:54.339520 [info ] [MainThread]: 
+[0m14:18:54.339858 [info ] [MainThread]: Finished running 11 tests in 0 hours 0 minutes and 15.05 seconds (15.05s).
+[0m14:18:54.340506 [debug] [MainThread]: Command end result
+[0m14:18:54.347067 [info ] [MainThread]: 
+[0m14:18:54.350560 [info ] [MainThread]: [31mCompleted with 11 errors and 0 warnings:[0m
+[0m14:18:54.350877 [info ] [MainThread]: 
+[0m14:18:54.351168 [error] [MainThread]: [33mDatabase Error in test accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room (models/schema.yml)[0m
+[0m14:18:54.351452 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.351722 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.351977 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/accepted_values_dim_listings_187fbd1e80835aa3e276f9355628fe50.sql
+[0m14:18:54.352239 [info ] [MainThread]: 
+[0m14:18:54.352503 [error] [MainThread]: [33mDatabase Error in test accepted_values_fct_reviews_review_sentiment__positive__neutral__negative (models/schema.yml)[0m
+[0m14:18:54.352763 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.353014 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.353273 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/accepted_values_fct_reviews_beb36f129a533890a78cc01ac370ef78.sql
+[0m14:18:54.353528 [info ] [MainThread]: 
+[0m14:18:54.353790 [error] [MainThread]: [33mDatabase Error in test not_null_dim_listings_host_id (models/schema.yml)[0m
+[0m14:18:54.354044 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.354301 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.354553 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/not_null_dim_listings_host_id.sql
+[0m14:18:54.354809 [info ] [MainThread]: 
+[0m14:18:54.355072 [error] [MainThread]: [33mDatabase Error in test not_null_dim_listings_listing_id (models/schema.yml)[0m
+[0m14:18:54.355332 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.355587 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.355844 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/not_null_dim_listings_listing_id.sql
+[0m14:18:54.356103 [info ] [MainThread]: 
+[0m14:18:54.356363 [error] [MainThread]: [33mDatabase Error in test not_null_fct_reviews_reviewer_name (models/schema.yml)[0m
+[0m14:18:54.356620 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.356873 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.357129 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/not_null_fct_reviews_reviewer_name.sql
+[0m14:18:54.357397 [info ] [MainThread]: 
+[0m14:18:54.357662 [error] [MainThread]: [33mDatabase Error in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m14:18:54.357917 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.358171 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.358424 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m14:18:54.358682 [info ] [MainThread]: 
+[0m14:18:54.358941 [error] [MainThread]: [33mDatabase Error in test not_null_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m14:18:54.359199 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.359448 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.359703 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m14:18:54.359954 [info ] [MainThread]: 
+[0m14:18:54.360215 [error] [MainThread]: [33mDatabase Error in test relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_ (models/schema.yml)[0m
+[0m14:18:54.360468 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.360723 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.360972 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/relationships_fct_reviews_11a92bfba430013beaafbab1587e0c3d.sql
+[0m14:18:54.361226 [info ] [MainThread]: 
+[0m14:18:54.361481 [error] [MainThread]: [33mDatabase Error in test unique_dim_listings_listing_id (models/schema.yml)[0m
+[0m14:18:54.361736 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.361984 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.362238 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/schema.yml/unique_dim_listings_listing_id.sql
+[0m14:18:54.368307 [info ] [MainThread]: 
+[0m14:18:54.368746 [error] [MainThread]: [33mDatabase Error in test unique_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m14:18:54.369023 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.369289 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.369543 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m14:18:54.369804 [info ] [MainThread]: 
+[0m14:18:54.370069 [error] [MainThread]: [33mDatabase Error in test unique_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m14:18:54.370329 [error] [MainThread]:   002003 (02000): SQL compilation error:
+[0m14:18:54.370581 [error] [MainThread]:   Database 'AIRBNB' does not exist or not authorized.
+[0m14:18:54.370836 [error] [MainThread]:   compiled Code at target/run/dbt_learn/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m14:18:54.371105 [info ] [MainThread]: 
+[0m14:18:54.371377 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=11 SKIP=0 TOTAL=11
+[0m14:18:54.371794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49995e0880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49995e08b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49995b6b80>]}
+[0m14:18:54.372053 [debug] [MainThread]: Flushing usage events
